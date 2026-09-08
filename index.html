@@ -2,7 +2,7 @@
 <html lang="zh-Hant">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
   <title>CQM員工打卡系統</title>
   <style>
     *,
@@ -526,6 +526,8 @@
       margin-bottom: 1rem;
       border: 2px solid #ea580c;
       user-select: none;
+      -webkit-user-select: none;
+      touch-action: manipulation;
     }
 
     .keypad-bar {
@@ -612,6 +614,8 @@
       display: flex;
       align-items: center;
       justify-content: center;
+      touch-action: manipulation;
+      -webkit-tap-highlight-color: transparent;
     }
 
     .key:hover {
@@ -668,6 +672,8 @@
       display: flex;
       align-items: center;
       justify-content: center;
+      touch-action: manipulation;
+      -webkit-tap-highlight-color: transparent;
     }
 
     .letter:hover {
