@@ -21,7 +21,7 @@
       font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
       background: #f4f4f5;
       color: #18181b;
-      padding-bottom: 5rem;
+      padding-bottom: 2rem;
     }
 
     ::selection {
@@ -79,7 +79,7 @@
 
     .header h1 {
       margin: 0;
-      font-size: 1.125rem;
+      font-size: 1rem;
       line-height: 1.25;
       letter-spacing: 0.025em;
     }
@@ -118,8 +118,8 @@
     }
 
     .main {
-      margin: 1rem auto 0;
-      padding: 1rem;
+      margin: 0.5rem auto 0;
+      padding: 0.5rem;
       transition: max-width 0.5s ease-out;
     }
 
@@ -141,10 +141,9 @@
     .card {
       background: #fff;
       border: 1px solid #f4f4f5;
-      border-radius: 2rem;
+      border-radius: 1.5rem;
       box-shadow: 0 1px 2px rgb(0 0 0 / 0.05);
-      padding: 1.5rem;
-      min-height: 400px;
+      padding: 1rem;
     }
 
     @media (min-width: 640px) {
@@ -183,44 +182,46 @@
     }
 
     .logo {
-      width: 14rem;
+      width: 10rem;
       height: auto;
-      margin: 0 auto 1.5rem;
+      margin: 0 auto 1rem;
       display: block;
       filter: drop-shadow(0 1px 1px rgb(0 0 0 / 0.05));
     }
 
     h2 {
       margin: 0 0 0.5rem;
-      font-size: 1.5rem;
+      font-size: 1.25rem;
       color: #27272a;
     }
 
     h2.section-title {
-      font-size: 1.25rem;
+      font-size: 1.5rem;
+      font-weight: 700;
     }
 
     .muted {
       color: #71717a;
-      margin: 0 0 2rem;
+      margin: 0 0 1rem;
       text-align: center;
+      font-size: 0.875rem;
     }
 
     .muted-sm {
       margin: 0;
-      font-size: 0.875rem;
+      font-size: 0.75rem;
       color: #71717a;
     }
 
     .full-input {
       width: 100%;
       text-align: center;
-      font-size: 1.25rem;
+      font-size: 1rem;
       background: #fafafa;
       border: 2px solid #e4e4e7;
-      border-radius: 2rem;
-      padding: 1rem 1.5rem;
-      margin-bottom: 1.5rem;
+      border-radius: 1.5rem;
+      padding: 0.75rem 1rem;
+      margin-bottom: 1rem;
       outline: none;
     }
 
@@ -241,9 +242,9 @@
     .btn {
       width: 100%;
       border: 0;
-      border-radius: 2rem;
-      padding: 1rem 1.5rem;
-      font-size: 1.125rem;
+      border-radius: 1.5rem;
+      padding: 0.75rem 1rem;
+      font-size: 1rem;
       font-weight: 700;
       cursor: pointer;
       display: inline-flex;
@@ -290,9 +291,9 @@
       color: #ea580c;
       border: 2px dashed #fed7aa;
       border-radius: 1.2rem;
-      padding: 0.75rem;
+      padding: 0.6rem;
       font-size: 0.875rem;
-      margin-bottom: 1rem;
+      margin-bottom: 0.75rem;
     }
 
     .btn-dashed:hover {
@@ -304,17 +305,22 @@
       display: flex;
       align-items: center;
       gap: 0.75rem;
-      margin-bottom: 1.5rem;
+      margin-bottom: 1rem;
     }
 
     .icon-circle {
-      width: 3rem;
-      height: 3rem;
+      width: 2.5rem;
+      height: 2.5rem;
       border-radius: 9999px;
       display: flex;
       align-items: center;
       justify-content: center;
       flex-shrink: 0;
+    }
+
+    .icon-circle svg {
+      width: 20px;
+      height: 20px;
     }
 
     .icon-circle.zinc {
@@ -328,55 +334,69 @@
     }
 
     .icon-circle.green {
-      width: 6rem;
-      height: 6rem;
+      width: 4rem;
+      height: 4rem;
       background: #dcfce7;
       color: #22c55e;
-      margin-bottom: 1.5rem;
+      margin-bottom: 1rem;
       box-shadow: 0 1px 2px rgb(0 0 0 / 0.05);
     }
 
+    .icon-circle.green svg {
+      width: 32px;
+      height: 32px;
+    }
+
     .icon-circle.lock {
-      width: 5rem;
-      height: 5rem;
+      width: 4rem;
+      height: 4rem;
       background: #27272a;
       color: #fff;
-      margin-bottom: 1.5rem;
+      margin-bottom: 1rem;
+    }
+
+    .icon-circle.lock svg {
+      width: 24px;
+      height: 24px;
     }
 
     .quiz-box {
       background: #fafafa;
       border: 1px solid #e4e4e7;
-      border-radius: 2rem;
-      padding: 1.5rem;
-      margin-bottom: 1.5rem;
+      border-radius: 1.5rem;
+      padding: 1rem;
+      margin-bottom: 1rem;
     }
 
     .quiz-text {
-      font-size: 1.375rem;
+      font-size: 1.25rem;
       font-weight: 600;
       color: #27272a;
-      margin: 0 0 1.5rem;
-      line-height: 1.625;
+      margin: 0 0 1rem;
+      line-height: 1.5;
     }
 
     .options {
       display: flex;
       flex-direction: column;
-      gap: 0.875rem;
+      gap: 0.5rem;
     }
 
     .option {
       width: 100%;
       text-align: left;
-      padding: 1.125rem 1.25rem;
-      border-radius: 1.5rem;
+      padding: 0.75rem 1rem;
+      border-radius: 1rem;
       border: 2px solid #e4e4e7;
       background: #fff;
       color: #52525b;
       cursor: pointer;
-      font-size: 1.125rem;
-      line-height: 1.5;
+      font-size: 1.25rem;
+      line-height: 1.4;
+      min-height: 3.5rem;
+      display: flex;
+      align-items: center;
+      box-sizing: border-box;
     }
 
     .option:hover {
@@ -394,11 +414,12 @@
       display: flex;
       align-items: center;
       gap: 0.75rem;
+      width: 100%;
     }
 
     .radio-dot {
-      width: 1.5rem;
-      height: 1.5rem;
+      width: 1.25rem;
+      height: 1.25rem;
       flex-shrink: 0;
       border-radius: 9999px;
       border: 2px solid #d4d4d8;
@@ -412,8 +433,8 @@
     }
 
     .radio-dot span {
-      width: 0.75rem;
-      height: 0.75rem;
+      width: 0.6rem;
+      height: 0.6rem;
       background: #f97316;
       border-radius: 9999px;
     }
@@ -421,22 +442,22 @@
     .machine-list {
       display: flex;
       flex-direction: column;
-      gap: 1rem;
-      margin-bottom: 1rem;
+      gap: 0.5rem;
+      margin-bottom: 0.75rem;
     }
 
     .machine-card {
       background: #fafafa;
       border: 1px solid #e4e4e7;
-      border-radius: 1.5rem;
-      padding: 1.25rem;
+      border-radius: 1rem;
+      padding: 0.75rem;
       position: relative;
     }
 
     .remove-btn {
       position: absolute;
-      top: 1rem;
-      right: 1rem;
+      top: 0.5rem;
+      right: 0.5rem;
       background: transparent;
       border: 0;
       color: #a1a1aa;
@@ -449,7 +470,7 @@
     }
 
     .machine-label {
-      margin: 0 0 0.75rem;
+      margin: 0 0 0.5rem;
       font-size: 0.75rem;
       font-weight: 700;
       color: #a1a1aa;
@@ -460,24 +481,24 @@
     .grid-2 {
       display: grid;
       grid-template-columns: 1fr 1fr;
-      gap: 0.75rem;
+      gap: 0.5rem;
     }
 
     .field-label {
       display: block;
-      font-size: 0.75rem;
+      font-size: 0.7rem;
       font-weight: 500;
       color: #52525b;
-      margin: 0 0 0.375rem 0.25rem;
+      margin: 0 0 0.25rem 0.25rem;
     }
 
     .field-input {
       width: 100%;
       background: #fff;
       border: 2px solid #e4e4e7;
-      border-radius: 0.75rem;
-      padding: 0.625rem 0.75rem;
-      font-size: 0.875rem;
+      border-radius: 0.5rem;
+      padding: 0.4rem 0.5rem;
+      font-size: 0.85rem;
       font-weight: 600;
       letter-spacing: 0.05em;
       color: #27272a;
@@ -497,10 +518,10 @@
 
     .keypad {
       background: #f97316;
-      padding: 0.875rem;
-      border-radius: 1.5rem;
-      box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1);
-      margin-bottom: 1.5rem;
+      padding: 0.5rem;
+      border-radius: 1rem;
+      box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1);
+      margin-bottom: 1rem;
       border: 2px solid #ea580c;
       user-select: none;
     }
@@ -577,13 +598,13 @@
     }
 
     .key {
-      height: 2.75rem;
+      height: 2.25rem;
       background: #fff;
       border: 0;
-      border-radius: 1rem;
-      box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1);
+      border-radius: 0.5rem;
+      box-shadow: 0 2px 4px -1px rgb(0 0 0 / 0.1);
       color: #27272a;
-      font-size: 1.25rem;
+      font-size: 1.125rem;
       font-weight: 700;
       cursor: pointer;
       display: flex;
@@ -628,7 +649,7 @@
     .letter-grid {
       display: grid;
       grid-template-columns: 1fr 1fr;
-      gap: 0.5rem;
+      gap: 0.35rem;
       margin: auto 0;
     }
 
@@ -637,9 +658,9 @@
       background: #fff;
       border: 0;
       border-radius: 9999px;
-      box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1);
+      box-shadow: 0 2px 4px -1px rgb(0 0 0 / 0.1);
       color: #27272a;
-      font-size: 1.125rem;
+      font-size: 0.9rem;
       font-weight: 700;
       cursor: pointer;
       display: flex;
@@ -949,11 +970,13 @@
 
     .opt-input {
       flex: 1;
+      height: 2.5rem;
       background: #fff;
       border: 1px solid #e4e4e7;
       border-radius: 0.5rem;
       padding: 0.375rem 0.75rem;
       outline: none;
+      box-sizing: border-box;
     }
 
     .opt-input.correct {
@@ -1010,7 +1033,7 @@
           </div>
           <div>
             <h1>CQM員工打卡系統</h1>
-            <span class="version">v3.0 CQM</span>
+            <span class="version">v4.0 CQM</span>
           </div>
         </div>
         <div class="header-actions">
@@ -1271,8 +1294,9 @@
       }
 
       function handleClockIn() {
+        state.session.empNo = (state.session.empNo || "").replace(/[^a-zA-Z0-9]/g, "").toUpperCase();
         if (!state.session.empNo.trim()) {
-          showToast("請輸入員工編號", "error");
+          showToast("請輸入有效的員工編號（只限英文與數字）", "error");
           return;
         }
         state.session.clockInTime = formatCustomDateTime(new Date());
@@ -1286,8 +1310,12 @@
       }
 
       function updateMachineRecord(index, field, value) {
-        state.session.machineRecords[index][field] = String(value).toUpperCase();
-        render();
+        const cleanVal = String(value || "").replace(/[^a-zA-Z0-9]/g, "").toUpperCase();
+        state.session.machineRecords[index][field] = cleanVal;
+        const input = viewRoot.querySelector(`input[data-idx="${index}"][data-field="${field}"]`);
+        if (input) {
+          input.value = cleanVal;
+        }
       }
 
       function handleKeypadPress(char) {
@@ -1310,20 +1338,31 @@
         updateMachineRecord(active.index, active.field, "");
       }
 
+      function updateActiveFieldDOM() {
+        viewRoot.querySelectorAll("[data-field]").forEach(function (el) {
+          const on =
+            Number(el.getAttribute("data-idx")) === state.activeInput.index &&
+            el.getAttribute("data-field") === state.activeInput.field;
+          el.classList.toggle("active", on);
+        });
+        const label = viewRoot.querySelector(".keypad-bar-left .truncate");
+        if (label && state.activeInput) {
+          const targetName = state.activeInput.field === "machineNo" ? "CQM 機號" : "票袋編號";
+          label.textContent = "第 " + (state.activeInput.index + 1) + " 組 : " + targetName;
+        }
+      }
+
       function handleNextField() {
         if (!state.activeInput) {
           state.activeInput = { index: 0, field: "machineNo" };
-          render();
-          return;
-        }
-        if (state.activeInput.field === "machineNo") {
+        } else if (state.activeInput.field === "machineNo") {
           state.activeInput = { index: state.activeInput.index, field: "bagNo" };
         } else if (state.activeInput.index < state.session.machineRecords.length - 1) {
           state.activeInput = { index: state.activeInput.index + 1, field: "machineNo" };
         } else {
           state.activeInput = { index: 0, field: "machineNo" };
         }
-        render();
+        updateActiveFieldDOM();
       }
 
       function handleAnswerSubmit() {
@@ -1358,7 +1397,12 @@
       }
 
       function handleRecordSubmit() {
-        const validRecords = state.session.machineRecords.filter(function (r) {
+        const validRecords = state.session.machineRecords.map(function (r) {
+          return {
+            machineNo: (r.machineNo || "").replace(/[^a-zA-Z0-9]/g, "").toUpperCase(),
+            bagNo: (r.bagNo || "").replace(/[^a-zA-Z0-9]/g, "").toUpperCase()
+          };
+        }).filter(function (r) {
           return r.machineNo.trim() || r.bagNo.trim();
         });
         const hasIncomplete = validRecords.some(function (r) {
@@ -1551,8 +1595,8 @@
           <div class="center-col fade-up">
             ${kexLogo}
             <h2>CQM員工打卡系統</h2>
-            <p class="muted">請輸入您的員工編號以開始今日的工作流程</p>
-            <input id="emp-no" class="full-input" type="text" placeholder="例如: EMP-001" value="${escapeAttr(state.session.empNo)}" />
+            <p class="muted">請輸入您的員工編號以開始今日的工作流程（只限英文與數字）</p>
+            <input id="emp-no" class="full-input" type="text" placeholder="例如: EMP001" value="${escapeAttr(state.session.empNo)}" />
             <button id="btn-clock-in" class="btn btn-orange" type="button">${icons.play} 開工打卡</button>
           </div>`;
       }
@@ -1600,11 +1644,11 @@
               <div class="grid-2">
                 <div>
                   <label class="field-label">開票機 (CQM) 編號</label>
-                  <input class="field-input${isMachineActive ? " active" : ""}" data-idx="${idx}" data-field="machineNo" type="text" placeholder="例如 CQM-8821" value="${escapeAttr(mr.machineNo)}" />
+                  <input class="field-input${isMachineActive ? " active" : ""}" data-idx="${idx}" data-field="machineNo" type="text" placeholder="例如 CQM8821" value="${escapeAttr(mr.machineNo)}" />
                 </div>
                 <div>
                   <label class="field-label">票袋編號</label>
-                  <input class="field-input${isBagActive ? " active" : ""}" data-idx="${idx}" data-field="bagNo" type="text" placeholder="例如 BAG-0943" value="${escapeAttr(mr.bagNo)}" />
+                  <input class="field-input${isBagActive ? " active" : ""}" data-idx="${idx}" data-field="bagNo" type="text" placeholder="例如 BAG0943" value="${escapeAttr(mr.bagNo)}" />
                 </div>
               </div>
             </div>`;
@@ -1824,7 +1868,11 @@
         const emp = document.getElementById("emp-no");
         if (emp) {
           emp.addEventListener("input", function (e) {
-            state.session.empNo = e.target.value;
+            const cleanVal = e.target.value.replace(/[^a-zA-Z0-9]/g, "").toUpperCase();
+            state.session.empNo = cleanVal;
+            const pos = e.target.selectionStart;
+            e.target.value = cleanVal;
+            if (typeof pos === "number") e.target.setSelectionRange(pos, pos);
           });
           emp.addEventListener("keydown", function (e) {
             if (e.key === "Enter") handleClockIn();
@@ -1836,7 +1884,14 @@
         viewRoot.querySelectorAll("[data-option]").forEach(function (btn) {
           btn.addEventListener("click", function () {
             state.selectedOption = Number(btn.getAttribute("data-option"));
-            render();
+            viewRoot.querySelectorAll(".option").forEach(function (opt) {
+              opt.classList.remove("selected");
+              const dot = opt.querySelector(".radio-dot");
+              if (dot) dot.innerHTML = "";
+            });
+            btn.classList.add("selected");
+            const dot = btn.querySelector(".radio-dot");
+            if (dot) dot.innerHTML = "<span></span>";
           });
         });
         const submitAns = document.getElementById("btn-submit-answer");
@@ -1850,24 +1905,15 @@
               return;
             }
             state.activeInput = { index: index, field: field };
-            viewRoot.querySelectorAll("[data-field]").forEach(function (el) {
-              const on =
-                Number(el.getAttribute("data-idx")) === index &&
-                el.getAttribute("data-field") === field;
-              el.classList.toggle("active", on);
-            });
-            const label = viewRoot.querySelector(".keypad-bar-left .truncate");
-            if (label) {
-              const targetName = field === "machineNo" ? "CQM 機號" : "票袋編號";
-              label.textContent = "第 " + (index + 1) + " 組 : " + targetName;
-            }
+            updateActiveFieldDOM();
           });
           input.addEventListener("input", function () {
             const idx = Number(input.getAttribute("data-idx"));
             const field = input.getAttribute("data-field");
-            state.session.machineRecords[idx][field] = input.value.toUpperCase();
+            const cleanVal = input.value.replace(/[^a-zA-Z0-9]/g, "").toUpperCase();
+            state.session.machineRecords[idx][field] = cleanVal;
             const pos = input.selectionStart;
-            input.value = state.session.machineRecords[idx][field];
+            input.value = cleanVal;
             if (typeof pos === "number") input.setSelectionRange(pos, pos);
           });
         });
