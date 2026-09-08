@@ -503,6 +503,8 @@
       letter-spacing: 0.05em;
       color: #27272a;
       outline: none;
+      cursor: pointer;
+      caret-color: transparent;
     }
 
     .field-input:hover {
@@ -1644,11 +1646,11 @@
               <div class="grid-2">
                 <div>
                   <label class="field-label">開票機 (CQM) 編號</label>
-                  <input class="field-input${isMachineActive ? " active" : ""}" data-idx="${idx}" data-field="machineNo" type="text" placeholder="例如 CQM8821" value="${escapeAttr(mr.machineNo)}" />
+                  <input class="field-input${isMachineActive ? " active" : ""}" data-idx="${idx}" data-field="machineNo" type="text" inputmode="none" readonly placeholder="例如 CQM8821" value="${escapeAttr(mr.machineNo)}" />
                 </div>
                 <div>
                   <label class="field-label">票袋編號</label>
-                  <input class="field-input${isBagActive ? " active" : ""}" data-idx="${idx}" data-field="bagNo" type="text" placeholder="例如 BAG0943" value="${escapeAttr(mr.bagNo)}" />
+                  <input class="field-input${isBagActive ? " active" : ""}" data-idx="${idx}" data-field="bagNo" type="text" inputmode="none" readonly placeholder="例如 BAG0943" value="${escapeAttr(mr.bagNo)}" />
                 </div>
               </div>
             </div>`;
